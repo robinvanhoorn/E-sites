@@ -11,9 +11,11 @@
     <script type='text/javascript' src='jquery.js'></script>
   </head>
 <body>
+ 
+  
   <form action="database.php" method="post">
     <table summary=""> 
-    <tr align="center">
+    <tr>
     <td>
       Persoonlijke gegevens
     <td>
@@ -48,6 +50,44 @@
       <td></td>
       </tr>
     </table>
+  </form>
+  
+  
+  
+  <form action="database.php" method="post">
+    <table summary=""> 
+    <tr>
+    <td>
+      Persoonlijke gegevens introducé
+    <td>
+    </tr>
+    <tr>
+      <td> Voornaam*</td>
+      <td><input type="text" name="voornaam" /></td>
+    </tr>
+    <tr>
+      <td> Achternaam* </td>
+      <td><input type="text" name="acthernaam" /></td>
+    </tr>
+    <tr>
+      <td> E-mailadres*</td>
+      <td><input type="text" name="emailadres" /></td>
+    </tr>
+    <tr>
+      <td> Adres*</td>
+      <td><input type="text" name="adres" /></td>
+    </tr>
+      <tr>
+      <td> Woonplaats*</td>
+      <td><input type="text" name="woonplaats" /></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Ok" /></td>
+      <td></td>
+      </tr>
+    </table>
+  
+  
   </form>
 </body>
 </html>
