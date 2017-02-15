@@ -13,7 +13,7 @@
 <body>
  
   
-  <form action="database.php" method="post">
+  <form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
     <table summary=""> 
     <tr>
     <td>
@@ -50,7 +50,22 @@
     </tr>
       <tr>
       <td> Eventuele allergieën</td>
-      <td><input type="text" name="allergie" /></td>
+      <td><input type="radio" name="allergie" value="ei" />
+        <input type="radio" name="allergie" value="gluten" />
+        <input type="radio" name="allergie" value="lupine" />
+        <input type="radio" name="allergie" value="melk" />
+        <input type="radio" name="allergie" value="sesamzaad" />
+        <input type="radio" name="allergie" value="noten" />
+        <input type="radio" name="allergie" value="zwaveldioxide" />
+        <input type="radio" name="allergie" value="selderij" />
+        <input type="radio" name="allergie" value="melk" />
+        <input type="radio" name="allergie" value="pinda's" />
+        <input type="radio" name="allergie" value="mosterd" />
+        <input type="radio" name="allergie" value="vis" />
+        <input type="radio" name="allergie" value="weekdieren" />
+        <input type="radio" name="allergie" value="soja" />
+        <input type="radio" name="allergie" value="schaaldieren" />
+      </td>
     </tr>
      <tr>
        <td>
