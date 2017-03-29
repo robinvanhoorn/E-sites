@@ -198,16 +198,16 @@
   <form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
 		<div id="personalNaam">PERSOONLIJKE DATA</div>
 		<label>
-			<input type="text" name="voornaam" onkeyup="check()" required />
+			<input type="text" name="voornaam" required />
 			<div class="label-text">Voornaam*</div>
 		</label>
 		<label class="formRightColumn">
-			<input type="text" name="achternaam" onkeyup="check()" required/>
+			<input type="text" name="achternaam" required/>
 			<div class="label-text" >Achternaam*</div>
 		</label>
 		<div></div>
 		<label>
-			<input type="text" name="emailadres" onkeyup="check()" required/>
+			<input type="text" name="emailadres" required/>
 			<div class="label-text" >E-mailadres*</div>
 		</label>
 		<label>
@@ -262,11 +262,11 @@
 		</label>
 		<div></div>
 		<label>
-			<input type="text" class="introducéField" name="inrobedrijfsnaam" />
+			<input type="text" class="introducéField" name="introbedrijfsnaam" />
 			<div class="label-text">Bedrijfsnaam</div>
 		</label>
 		<label>
-			<input type="text" class="introducéField" name="introalergie" />
+			<input type="text" class="introducéField" name="introallergie" />
 			<div class="label-text">Allergiën/dieten</div>
 		</label>
 	</div>
@@ -284,7 +284,7 @@
 <div class="line" id="line1"></div>
 <div class="lineText" id="lineText2">Groot Feest! - April 9</div>
 <div class="line" id="line2"></div>
-<div class="lineText" id="lineText3"><a href="#"id="homeScreenContinue">Klik hier om door te gaan</a></div>
+<div class="lineText" id="lineText3"><a href="#homeScreenContinue "id="homeScreenContinue">Klik hier om door te gaan</a></div>
 <div class="line" id="line3"></div>
 </div></a>
 <div id="hoverScreen"></div>
@@ -330,13 +330,13 @@ $sessie2 = mysqli_real_escape_string($link, $_REQUEST['session2Invite']);
 $sessie3 = mysqli_real_escape_string($link, $_REQUEST['session3Invite']);
 
 
-$intorvoornaam = mysqli_real_escape_string($link, $_REQUEST['introvoornaam']);
+$introvoornaam = mysqli_real_escape_string($link, $_REQUEST['introvoornaam']);
 $introachternaam = mysqli_real_escape_string($link, $_REQUEST['introachternaam']);
 $introemailadres = mysqli_real_escape_string($link, $_REQUEST['introemailadres']);
 $introadres = mysqli_real_escape_string($link, $_REQUEST['introadres']);
 $intropostcode = mysqli_real_escape_string($link, $_REQUEST['intropostcode']);
 $introwoonplaats = mysqli_real_escape_string($link, $_REQUEST['introwoonplaats']);
-$inrobedrijfsnaam = mysqli_real_escape_string($link, $_REQUEST['introbedrijfsnaam']);
+$introbedrijfsnaam = mysqli_real_escape_string($link, $_REQUEST['introbedrijfsnaam']);
 $introallergie = mysqli_real_escape_string($link, $_REQUEST['introallergie']);
 $introsessie1 = mysqli_real_escape_string($link, $_REQUEST['session1Introducé']);
 $introsessie2 = mysqli_real_escape_string($link, $_REQUEST['session2Introducé']);
@@ -348,7 +348,7 @@ if(empty($achternaam)) {
 
 }
 else { 
-$sql = "INSERT INTO gegevens (Voornaam, Achternaam, Emailadres, Adres, Postcode, Woonplaats, Bedrijfsnaam, Allergie, Sessie1, Sessie2, Sessie3, IntroducéVoornaam, IntroducéAchternaam, IntroducéEmailadres, IntroducéAdres, IntroducéPostcode, IntroducéWoonplaats, IntroducéBedrijfsnaam, IntroducéAllergie, IntroducéSessie1, IntroducéSessie2, IntroducéSessie3) VALUES ('$voornaam', '$achternaam', '$emailadres', '$adres', '$postcode', '$woonplaats', '$bedrijfsnaam', '$allergie', '$sessie1', '$sessie2', '$sessie3', '$introvoornaam', '$introachternaam', '$inroemailadres', '$introadres', '$intropostcode', '$introwoonplaats', '$introbedrijfsnaam', '$introallergie', '$introsessie1', '$introsessie2', '$introsessie3')";
+$sql = "INSERT INTO gegevens (Voornaam, Achternaam, Emailadres, Adres, Postcode, Woonplaats, Bedrijfsnaam, Allergie, Sessie1, Sessie2, Sessie3, IntroducéVoornaam, IntroducéAchternaam, IntroducéEmailadres, IntroducéAdres, IntroducéPostcode, IntroducéWoonplaats, IntroducéBedrijfsnaam, IntroducéAllergie, IntroducéSessie1, IntroducéSessie2, IntroducéSessie3) VALUES ('$voornaam', '$achternaam', '$emailadres', '$adres', '$postcode', '$woonplaats', '$bedrijfsnaam', '$allergie', '$sessie1', '$sessie2', '$sessie3', '$introvoornaam', '$introachternaam', '$introemailadres', '$introadres', '$intropostcode', '$introwoonplaats', '$introbedrijfsnaam', '$introallergie', '$introsessie1', '$introsessie2', '$introsessie3')";
 if(mysqli_query($link, $sql)){
       // VOER HIER VERWIJZING IN
 	  echo
@@ -362,3 +362,4 @@ if(mysqli_query($link, $sql)){
 } 
 mysqli_close($link);
 ?>
+
