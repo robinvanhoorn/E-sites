@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Resultaten</title>
+		<title>Database Print</title>
 		</head>
 	<body>	
 	
