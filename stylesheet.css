@@ -9,7 +9,8 @@
 #lineText1 {margin-top: 18vh;}
 #lineText2 {margin-top: 38vh;}
 #lineText3 {margin-top: 58vh;}
-#homeScreenContinue:hover {color: yellow;}
+#homeScreenContinue {color: black}
+#homeScreenContinue:hover {color: grey;}
 
 #hoverScreen {
 	width: 0; 
@@ -128,7 +129,7 @@ label input:focus {
   width: 400px;
 }
 label input:focus + .label-text {
-  color: #F0F0F0;
+  color: black;
   font-size: 13px;
   -moz-transform: translateY(-74px);
   -ms-transform: translateY(-74px);
@@ -143,23 +144,40 @@ label input:valid + .label-text {
   transform: translateY(-74px);
 }
 
-#submitButton {
-  background-color: white;
-  border: 2px solid #333333;
-  border-radius: 27px;
-  color: #333333;
-  cursor: pointer;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 15px 30px;
-  transition: all 200ms;
+.sendButton {
+	position: relative; 
+//display:block;
+height: 45px;
+width: 150px;
+margin: 10px 7px;
+padding: 5px 5px;
+font-weight: 700;
+font-size: 15px;
+letter-spacing: 2px;
+color: #383736;
+border-bottom: 2px grey solid;
+border-left-style: none;
+border-top-style: none;
+border-right-style: none;  
+text-transform: uppercase;
+outline: 0;
+  overflow:hidden;
+background: none;
+z-index: 10;
+cursor: pointer;
+transition: 0.08s ease-in;
+-o-transition: 0.08s ease-in;
+-ms-transition: 0.08s ease-in;
+-moz-transition: 0.08s ease-in;
+-webkit-transition: 0.08s ease-in;
 }
-#submitButton:hover, #submitButton:focus {
-  background-color: #333333;
-  color: white;
-  outline: 0;
+
+
+.sendButton:hover {
+	color: black;
+	width: 200px;
 }
+
 
 #primary_nav_wrap li {
 	
@@ -317,4 +335,12 @@ div.notificationContainer {
 	left: 50%;
 	right: 50%;
 	width: 200px;
+}
+
+#logo {
+	position: fixed;
+	height: 40px;
+	z-index: 100000000;
+	top: 2%;
+	left: 2%;
 }
