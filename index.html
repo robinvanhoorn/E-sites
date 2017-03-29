@@ -179,7 +179,7 @@
                 <div class="service-icon red">
                     <div class="front-content">
                         <i class="fa fa-trophy"></i>
-                        <h3>Ui Developer</h3>
+                        <h3>UI Developer</h3>
                     </div>
                 </div>
                 <div class="service-content">
@@ -194,57 +194,57 @@
         </div>
 	</div>
 <div id="inschrijven">
-  <form action="<?php echo $_SERVER['PHP_SELF']?>">
+  <form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
 		<div id="personalNaam">PERSONAL DATA</div>
 		<label>
-			<input type="text" name="voornaam"/>
-			<div class="label-text">First name</div>
+			<input type="text" name="voornaam" onkeyup="check()" id="voornaam" required />
+			<div class="label-text">First name*</div>
 		</label>
 		<label class="formRightColumn">
-			<input type="text" />
-			<div class="label-text" name="achternaam">Last name</div>
+			<input type="text" name="achternaam" onkeyup="check()" id="achternaam"/>
+			<div class="label-text" >Last name*</div>
 		</label>
 		<div></div>
 		<label>
-			<input type="text" />
-			<div class="label-text" name="emailadres">E-mailadres</div>
+			<input type="text" name="emailadres" onkeyup="check()" id="emailadres"/>
+			<div class="label-text" >E-mailadres*</div>
 		</label>
 		<label>
-			<input type="text" />
-			<div class="label-text" name="adres">Adres</div>
-		</label>
-		<div></div>
-		<label>
-			<input type="text" />
-			<div class="label-text" name="postcode">Postcode</div>
-		</label>
-		<label>
-			<input type="text" />
-			<div class="label-text" name="woonplaats">Woonplaats</div>
+			<input type="text" name="adres"/>
+			<div class="label-text" >Adres</div>
 		</label>
 		<div></div>
 		<label>
-			<input type="text" />
-			<div class="label-text" name="bedrijfsnaam">Bedrijfsnaam</div>
+			<input type="text" name="postcode"/>
+			<div class="label-text" >Postcode</div>
 		</label>
 		<label>
-			<input type="text" />
-			<div class="label-text" name="allergie">Allergiën/dieten</div>
+			<input type="text" name="woonplaats"/>
+			<div class="label-text" >Woonplaats</div>
+		</label>
+		<div></div>
+		<label>
+			<input type="text" name="bedrijfsnaam"/>
+			<div class="label-text" >Bedrijfsnaam</div>
+		</label>
+		<label>
+			<input type="text" name="allergie"/>
+			<div class="label-text" >Allergiën/dieten</div>
 		</label>
 	<div class="introducé">
 	<div id="introducéNaam">DATA INTRODUCÉ</div>
 		<label>
 			<input type="text" class="introducéField"  name="introvoornaam"/>
-			<div class="label-text">First name</div>
+			<div class="label-text">First name*</div>
 		</label>
 		<label class="formRightColumn">
 			<input type="text" class="introducéField"  name="introachternaam"/>
-			<div class="label-text">Last name</div>
+			<div class="label-text">Last name*</div>
 		</label>
 		<div></div>
 		<label>
 			<input type="text" class="introducéField"  name="introemailadres"/>
-			<div class="label-text">E-mailadres</div>
+			<div class="label-text">E-mailadres*</div>
 		</label>
 		<label>
 			<input type="text" class="introducéField" name="introadres" />
@@ -269,8 +269,8 @@
 			<div class="label-text">Allergiën/dieten</div>
 		</label>
 	</div>
-	<div class="container">
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="submitButton">Submit</button>
+	<div>
+		<input type="submit" class="sendButton" value="submit"></input>
 	</div>
 	
 </form>
@@ -312,7 +312,6 @@
 
 <?php
 $link = mysqli_connect("localhost", "root", "root", "it-challenge");
- 
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
@@ -341,14 +340,21 @@ $introallergie = mysqli_real_escape_string($link, $_REQUEST['introallergie']);
 $introsessie1 = mysqli_real_escape_string($link, $_REQUEST['session1Introducé']);
 $introsessie2 = mysqli_real_escape_string($link, $_REQUEST['session2Introducé']);
 $introsessie3 = mysqli_real_escape_string($link, $_REQUEST['session3Introducé']);
+
  
 if(empty($achternaam)) {
-	
+
+
 }
 else { 
-$sql = "INSERT INTO gegevens (Voornaam, Achternaam, Emailadres, Adres, Postcode, Woonplaats, Bedrijfsnaam, Allergie, IntroducéVoornaam, IntroducéAchternaam, IntroducéEmailadres, IntroducéAdres, IntroducéPostcode, IntroducéWoonplaats, IntroducéBedrijfsnaam, IntroducéAllergie) VALUES ('$voornaam', '$achternaam', '$emailadres', '$adres', '$postcode', '$woonplaats', '$bedrijfsnaam', '$allergie', '$sessie1', '$sessie2', '$sessie3', '$introvoornaam', '$introachternaam', '$inroemailadres', '$introadres', '$intropostcode', '$introwoonplaats', '$introbedrijfsnaam', '$introallergie', '$introsessie1', '$introsessie2', '$introsessie3')";
+$sql = "INSERT INTO gegevens (Voornaam, Achternaam, Emailadres, Adres, Postcode, Woonplaats, Bedrijfsnaam, Allergie, Sessie1, Sessie2, Sessie3, IntroducéVoornaam, IntroducéAchternaam, IntroducéEmailadres, IntroducéAdres, IntroducéPostcode, IntroducéWoonplaats, IntroducéBedrijfsnaam, IntroducéAllergie, IntroducéSessie1, IntroducéSessie2, IntroducéSessie3) VALUES ('$voornaam', '$achternaam', '$emailadres', '$adres', '$postcode', '$woonplaats', '$bedrijfsnaam', '$allergie', '$sessie1', '$sessie2', '$sessie3', '$introvoornaam', '$introachternaam', '$inroemailadres', '$introadres', '$intropostcode', '$introwoonplaats', '$introbedrijfsnaam', '$introallergie', '$introsessie1', '$introsessie2', '$introsessie3')";
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";  // VOER HIER VERWIJZING IN
+      // VOER HIER VERWIJZING IN
+	  echo
+	  "<script type='text/javascript'>
+	  $(document).ready(function(){
+		 $('#myModal').modal('show'); 
+	  }); </script>";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
