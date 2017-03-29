@@ -136,13 +136,15 @@ label input:focus + .label-text {
   -webkit-transform: translateY(-74px);
   transform: translateY(-74px);
 }
-label input:valid + .label-text {
+
+label input:not([value=""]) + .label-text {
   font-size: 13px;
   -moz-transform: translateY(-74px);
   -ms-transform: translateY(-74px);
   -webkit-transform: translateY(-74px);
-  transform: translateY(-74px);
+  transform: translateY(-74px);	
 }
+
 
 .sendButton {
 	position: relative; 
