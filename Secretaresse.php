@@ -44,7 +44,7 @@
 session_start();
 if($_SESSION["ingelogd"]=="1")
 {
-	print("<a href='resultaten.php'> Ga door</a>");	
+	<script type="text/javascript">location.href = 'resultaten.php';</script>;	
 }
 else
 {
@@ -55,7 +55,7 @@ else
 		$_SESSION["naam"]= $naam;
 		$_SESSION["wachtwoord"]= $wachtwoord;
 		$_SESSION["ingelogd"] = "1";
-		print("<a href='resultaten.php'> Ga door</a>");	
+		<script type="text/javascript">location.href = 'resultaten.php';</script>;	
 	}
 	
 	if($_SESSION["ingelogd"] !="1")
