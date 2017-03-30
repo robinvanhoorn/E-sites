@@ -39,7 +39,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>design | door: sjoerd dijkstra</h3>
-                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. 
+                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie1) AS totaldeveloper FROM gegevens WHERE Sessie1='Design'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50. 
 </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session1Invite" value="Design" class="session1Option1"> Ik wil deze sessie bijwonen.<br>
@@ -58,7 +77,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>php | door: jeroen teurlings</h3>
-                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
+                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie1) AS totaldeveloper FROM gegevens WHERE Sessie1='PHPDeveloper'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.</p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session1Invite" value="PHPDeveloper" class="session1Option2"> Ik wil deze sessie bijwonen.<br>
 					<div class="introducé"><input type="radio" name="session1Introducé" value="PHPDeveloper" class="session1Option2"> Mijn introducé wil deze sessie bijwonen.</div>
@@ -76,7 +114,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>UI | door: Dave Segeren</h3>
-                    <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
+                    <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie1) AS totaldeveloper FROM gegevens WHERE Sessie1='Developer'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.
 </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session1Invite" value="Developer" class="session1Option3"> Ik wil deze sessie bijwonen.<br>
@@ -98,7 +155,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>design | Door: Sjoerd dijkstra</h3>
-                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. </p>
+                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie2) AS totaldeveloper FROM gegevens WHERE Sessie2='Design'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50. </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session2Invite" value="Design" class="session2Option1"> Ik wil deze sessie bijwonen.<br>
 					<div class="introducé"><input type="radio" name="session2Introducé" value="Design" class="session2Option1"> Mijn introducé wil deze sessie bijwonen.</div>
@@ -116,7 +192,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>php | door: jeroen teurlings</h3>
-                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
+                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie2) AS totaldeveloper FROM gegevens WHERE Sessie2='PHPDeveloper'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.</p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session2Invite" value="PHPDeveloper" class="session2Option2"> Ik wil deze sessie bijwonen.<br>
 					<div class="introducé"><input type="radio" name="session2Introducé" value="PHPDeveloper" class="session2Option2"> Mijn introducé wil deze sessie bijwonen.</div>
@@ -134,7 +229,28 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>UI | door: Dave Segeren</h3>
-                    <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
+                    
+					
+					<p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie2) AS totaldeveloper FROM gegevens WHERE Sessie2='Developer'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.
 </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session2Invite" value="Developer" class="session2Option3"> Ik wil deze sessie bijwonen.<br>
@@ -156,7 +272,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>design | door: Sjoerd Dijkstra</h3>
-                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. </p>
+                    <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie3) AS totaldeveloper FROM gegevens WHERE Sessie3='Design'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50. </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session3Invite" value="Design" class="session3Option1"> Ik wil deze sessie bijwonen.<br>
 					<div class="introducé"><input type="radio" name="session3Introducé" value="Design" class="session3Option1"> Mijn introducé wil deze sessie bijwonen.</div>
@@ -174,7 +309,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>php | door: jeroen teurlings</h3>
-                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
+                    <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie3) AS totaldeveloper FROM gegevens WHERE Sessie3='PHPDeveloper'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.</p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session3Invite" value="PHPDeveloper" class="session3Option2"> Ik wil deze sessie bijwonen.<br>
 					<div class="introducé"><input type="radio" name="session3Introducé" value="PHPDeveloper" class="session3Option2"> Mijn introducé wil deze sessie bijwonen.</div>
@@ -192,7 +346,26 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                 </div>
                 <div class="service-content">
                     <h3>UI | door: Dave Segeren</h3>
-                    <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
+                    <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development. Bezetting: 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "it-challenge";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$query = "SELECT COUNT(Sessie3) AS totaldeveloper FROM gegevens WHERE Sessie3='Developer'";
+$result = mysqli_query($conn, $query);
+$d = mysqli_fetch_assoc($result);
+echo $d['totaldeveloper'];
+mysqli_close($conn);
+?>
+ / 50.
 </p>
 					<div class="sessionChoiceBox">
 					<input type="radio" name="session3Invite" value="Developer" class="session3Option3"> Ik wil deze sessie bijwonen.<br>
