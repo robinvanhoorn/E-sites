@@ -2,15 +2,15 @@
 
 .line {background-color: black; width: 70vw; height: 2vh; border-radius: 5px; position: absolute; z-index: 2;}
 #line1 {margin-left: 15vw; margin-top: 30vh;}
-#line2 {margin-left: 15vw; margin-top: 50vh;}
-#line3 {margin-left: 15vw; margin-top: 70vh;}
+#line2 {margin-left: 15vw; margin-top: 47vh;}
+#line3 {margin-left: 15vw; margin-top: 64vh;}
 
-.lineText {color: black; text-align: center; text-decoration: none; font-size: 11vh; position: absolute; font-weight: bold;width: 100%; z-index: 2;}
-#lineText1 {margin-top: 18vh;}
+.lineText {color: black; text-align: center; text-decoration: none; font-size: 8vh; position: absolute; font-weight: bold;width: 100%; z-index: 2;   text-transform: uppercase;}
+#lineText1 {margin-top: 21vh;}
 #lineText2 {margin-top: 38vh;}
-#lineText3 {margin-top: 58vh;}
+#lineText3 {margin-top: 55vh;}
 #homeScreenContinue {color: black}
-#homeScreenContinue:hover {color: grey;}
+#homeScreenContinue:hover {color: grey; text-decoration: none;}
 
 #hoverScreen {
 	width: 0; 
