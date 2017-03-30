@@ -42,8 +42,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. 
 </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session1Invite" value="Design"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session1Introducé" value="Design"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session1Invite" value="Design" class="session1Option1"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session1Introducé" value="Design" class="session1Option1"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -60,8 +60,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <h3>php | door: jeroen teurlings</h3>
                     <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session1Invite" value="PHPDeveloper"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session1Introducé" value="PHPDeveloper"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session1Invite" value="PHPDeveloper" class="session1Option2"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session1Introducé" value="PHPDeveloper" class="session1Option2"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -79,8 +79,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
 </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session1Invite" value="Developer"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session1Introducé" value="Developer"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session1Invite" value="Developer" class="session1Option3"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session1Introducé" value="Developer" class="session1Option3"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -100,8 +100,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <h3>design | Door: Sjoerd dijkstra</h3>
                     <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session2Invite" value="Design"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session2Introducé" value="Design"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session2Invite" value="Design" class="session2Option1"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session2Introducé" value="Design" class="session2Option1"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -118,8 +118,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <h3>php | door: jeroen teurlings</h3>
                     <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session2Invite" value="PHPDeveloper"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session2Introducé" value="PHPDeveloper"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session2Invite" value="PHPDeveloper" class="session2Option2"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session2Introducé" value="PHPDeveloper" class="session2Option2"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -137,8 +137,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
 </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session2Invite" value="Developer"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session2Introducé" value="Developer"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session2Invite" value="Developer" class="session2Option3"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session2Introducé" value="Developer" class="session2Option3"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -158,8 +158,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <h3>design | door: Sjoerd Dijkstra</h3>
                     <p>Deze jonge spreker zal het gaan hebben over hoe je met humor zelfs de donkerste dagen door kan komen. Met een knipoog, afgezaagde anekdotes en kromme quotes zal deze sessie in een zucht en een vloek voorbij gaan. </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session3Invite" value="Design"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session3Introducé" value="Design"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session3Invite" value="Design" class="session3Option1"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session3Introducé" value="Design" class="session3Option1"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -176,8 +176,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <h3>php | door: jeroen teurlings</h3>
                     <p>Jeroen Teurlings is expert op het gebied van medical app development. Hij gaat in deze sessie vertellen over de medische applicaties die hij zelf heeft ontwikkeld en over de achterliggende filosofie.</p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session3Invite" value="PHPDeveloper"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session3Introducé" value="PHPDeveloper"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session3Invite" value="PHPDeveloper" class="session3Option2"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session3Introducé" value="PHPDeveloper" class="session3Option2"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
@@ -195,8 +195,8 @@ U hoeft niet alleen te komen: het meenemen van een introducé is toegestaan, imm
                     <p>Dave Segeren is expert op het gebied van web en app development. Hij gaat vertellen over de nieuwe toepassingen is deze sector en over de gedachtegang van meerdere concepten op het gebied van web en app development.
 </p>
 					<div class="sessionChoiceBox">
-					<input type="radio" name="session3Invite" value="Developer"> Ik wil deze sessie bijwonen.<br>
-					<div class="introducé"><input type="radio" name="session3Introducé" value="Developer"> Mijn introducé wil deze sessie bijwonen.</div>
+					<input type="radio" name="session3Invite" value="Developer" class="session3Option3"> Ik wil deze sessie bijwonen.<br>
+					<div class="introducé"><input type="radio" name="session3Introducé" value="Developer" class="session3Option3"> Mijn introducé wil deze sessie bijwonen.</div>
 					</div>
 				</div>
             </div>
